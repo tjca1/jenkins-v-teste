@@ -1,4 +1,4 @@
-FROM tjca1/cod-jenkins:1.0.0
+FROM jenkins/jenkins:2.112
 USER root
 RUN apt-get update && apt-get install -y make git openjdk-8-jdk
 RUN mkdir /srv/backup && chown jenkins:jenkins /srv/backup
